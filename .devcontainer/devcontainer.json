@@ -3,6 +3,11 @@
   "hostRequirements": {
     "memory": "8gb"
   },
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
+  },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "corepack enable && yarn install",
   "postCreateCommand": "",
